@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+
+<hibernate-mapping>
+	<class name="dry.tuna.model.Player" table="PLAYER">
+		<id name="id" type="int" column="id">
+		   <generator class="native"/>
+		</id>
+		<property name="userName" column="username" type="string"/>
+		<property name="gold" column="gold" type="int"/>
+		<property name="silver" column="silver" type="int"/>
+		<property name="bronze" column="bronze" type="int"/>
+		<property name="total" column="total" type="int"/>
+	</class>
+</hibernate-mapping>
